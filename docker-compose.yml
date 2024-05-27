@@ -1,0 +1,38 @@
+version: '3'
+services:
+  remitano-core:
+    container_name: remitano-core-services
+    build:
+      context: .
+      target: development
+    command: npm run start:dev
+    volumes:
+      - ./src:/user/src/app/src
+    env_file:
+      - .env
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+    depends_on:
+      - postgres
+    networks:
+      - webnetwork
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    networks:
+      - webnetwork
+    ports:
+      - '5432:5432'
+    volumes:
+      - progresDB:/var/lib/postgresql/data
+    env_file:
+      - docker.env
+
+volumes:
+  progresDB:
+
+networks:
+  webnetwork:
+
