@@ -3,6 +3,8 @@
 ## Overview
 This is the backend project of the **video-sharing-application**.
 
+Here is the [repository of the frontend](https://github.com/harryduong99/video-sharing-frontend).
+
 ## Purpose
 Our client app need HTTP REST APIs and order services to be able to function. This project basically a backend and handle all background work. 
 ## Key features
