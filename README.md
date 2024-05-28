@@ -36,7 +36,7 @@ No specific tool required for this project. For viewing and managing docker cont
 
 # Installation & Configuration
 
-Follow these step to have the project works locally
+Follow these step to have the project work locally
 
 1. Clone the repository from github
 2. Create `.env` file based on the `.env.example`. 
@@ -81,12 +81,16 @@ The project is based on NestJs, which helps the testing quite straightforward. T
 
 ### Unit testing
 
-All the controller and services have its own test. To run test: `npm run test`.
+All the controller and services have their own test. To run the test: `npm run test`.
+
+<img width="578" alt="Screen Shot 2024-05-28 at 10 58 46" src="https://github.com/harryduong99/video-sharing-backend/assets/33088334/b1c2747f-2291-49ff-83a5-1c3150b17047">
 
 ### End to End testing
 
 NestJs also provide end to end test, this kind of test covers the interaction of classes at a more aggregate level -- closer to the kind of end-user's interaction will have with the production system.
 To run test: `npm run test:e2e`
+
+<img width="518" alt="Screen Shot 2024-05-28 at 11 02 22" src="https://github.com/harryduong99/video-sharing-backend/assets/33088334/a8da7c05-250f-43de-be04-714942c8765a">
 
 ### Todo
 
