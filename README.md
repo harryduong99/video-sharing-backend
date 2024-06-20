@@ -114,10 +114,10 @@ For this backend project, the step to have it deployed is quite simple:
 8. Verify if the service is up: access the URL via browser: `{Public IPv4 address}:3000/ping`, we should see `pong` response. This endpoint in the project is for health checking.
 
 Our deployed backend:
-> http://3.93.48.247:3000/ping
+> http://3.93.48.247:3000/ping (deprecated - server temporarily shutdown)
 
 Our application:
-> http://3.93.48.247:3001/
+> http://3.93.48.247:3001/ (deprecated - server temporarily shutdown)
 ## Todo
 
 A full AWS solution but not a only EC2 should be applied for this when it come to the real world. RDS, Load balancer (ELB), Auto Scaling Group, Disaster prevention (multi AZ)...
@@ -127,7 +127,7 @@ A full AWS solution but not a only EC2 should be applied for this when it come t
 After login, user can share video and other logged in users can expect to receive a real time the notification about it.
 This feature might not simple as it is for the scaling scenario.
 
-1. Access `http://3.93.48.247:3001/`
+1. Access ~~`http://3.93.48.247:3001/`~~
 2. Login User1 or User2
 3. Share a video, for example User1 share: `https://youtu.be/eJ4i-QbXG54?si=fvjVF6SB-JN4Uv_I`. user 2 should receive a notification about a video that shared by `user1@example.com`.
 
